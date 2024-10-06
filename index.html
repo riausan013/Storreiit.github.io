@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link & Keyword Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+
+    <h1>Link & Keyword Manager</h1>
+
+    <div class="input-section">
+        <h2>Add YouTube Video</h2>
+        <input type="text" id="video-url" placeholder="Enter YouTube Video URL" />
+        <button onclick="addVideo()">Add Video</button>
+        
+        <h2>Add Webpage Link</h2>
+        <input type="text" id="webpage-url" placeholder="Enter Webpage URL" />
+        <button onclick="addWebpage()">Add Webpage</button>
+
+        <h2>Add Keyword</h2>
+        <input type="text" id="keyword-input" placeholder="Enter Keyword or Sentence" />
+        <select id="category">
+            <option value="category1">Category 1</option>
+            <option value="category2">Category 2</option>
+            <option value="category3">Category 3</option>
+        </select>
+        <button onclick="addKeyword()">Add Keyword</button>
+        
+        <label>
+            <input type="checkbox" id="mode-switch" onclick="toggleMode()"> Dark Mode
+        </label>
+    </div>
+
+    <div class="list-section">
+        <h2>YouTube Videos</h2>
+        <div id="video-list"></div>
+
+        <h2>Webpage Links</h2>
+        <div id="webpage-list"></div>
+
+        <h2>Keywords</h2>
+        <div id="keyword-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
